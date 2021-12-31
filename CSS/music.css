@@ -1,0 +1,75 @@
+/* 
+Custom mini audio player
+https://www.youtube.com/watch?v=rkqqBA6ohc0
+
+*/
+
+.section-music {
+    padding: 4.8rem 0 4.8rem 0;
+    background-color: #f3f5f6;
+}
+
+.sawyer-music {
+    max-width: 130rem;
+    margin: auto;
+    padding: 0 3.2rem 3.2rem 3.2rem;
+}
+
+.cover-img {
+    width: 100%;
+}
+
+.cover-img img {
+    width: 100%;
+    border: .8rem outset #555b66;
+    margin-bottom: 2.4rem;
+}
+
+.music audio {
+    display: block;
+    width: 100%;
+    padding: 0 .8rem;
+}
+
+.songList {
+    list-style: none;
+}
+
+.songList li {
+    padding: 0 .8rem;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    color: #333;
+}
+
+.songList li ion-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+    cursor: pointer;
+}
+
+.songList li p {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.videos {
+    max-width: 130rem;
+    row-gap: 4.8rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 3.2rem 3.2rem 3.2rem;
+}
+
+.music-video {
+    width: 100%;
+    gap: 1.2rem;
+}
+
+.music-video iframe {
+    display: block;
+    width: 100%;
+    border: .8rem outset #555b66;
+}

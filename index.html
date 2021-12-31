@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sawyer Jay is an Musician living in Lincoln Nebraska. He is ready
+    to book shows and play music at any event such as weddings and bars." />
+
+    <!-- Icons -->
+    <link rel="icon" href="img/sawyer-icon.JPG" />
+    <link rel="apple-touch-icon" href="img/sawyer-icon-180.JPG" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/queries.css">
+
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src="js/player.js"></script>
+
+    <title>Sawyer Jay &mdash; One Man Band</title>
+</head>
+
+<body>
+    <header class="heading">
+        <div class="media">
+            <ul class="media-list">
+                <li>
+                    <a href="https://open.spotify.com/artist/0paW7xF4GwlHS6951ibriS?si=oHYc3mTqTTGx9KjspYBO5w" class="media-icon-spotify">
+                        <img src="img/spotify.png" alt="Sawyer Jay spotify" class="media-icon media-icon-spotify"></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon class="media-icon media-icon-instagram" name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon class="media-icon media-icon-facebook" name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li><a class="main-nav-link smooth-scroll" href="#">Home</a></li>
+                <li><a class="main-nav-link smooth-scroll" href="#music">Music</a></li>
+                <li><a class="main-nav-link smooth-scroll" href="#events">Events</a></li>
+                <li><a class="main-nav-link smooth-scroll" href="#about">About</a></li>
+                <li><a class="main-nav-link smooth-scroll" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+
+    </header>
+    <main>
+        <section class="section-home">
+
+
+            <div class="sawyer-home home-grid">
+                <div class="main-heading">
+                    <h1 class="primary-heading">Sawyer Jay</h1>
+                </div>
+
+                <div class="intro">
+                    <h3 class="quote-heading">The One Man Band&excl;</h3>
+                    <p class="quote">"Songs evoke the feeling of riding in the back of a pickup on a warm day.”<br /> - Hear Nebraska</p>
+
+                    <div class="intro-btns">
+                        <a href="#music" class="btn-music smooth-scroll">Music</a>
+                        <a href="#events" class="btn-shows smooth-scroll">Shows</a>
+                    </div>
+
+                    <div class="past-played">
+                        <div class="played-img">
+                            <img src="img/barsPlayed/carmelas.jpg" alt="Place played photo">
+                            <img src="img/barsPlayed/cedarwood.jpg" alt="Place played photo">
+                            <img src="img/barsPlayed/goodTimesSaloon.jpg" alt="Place played photo">
+                            <img src="img/barsPlayed/hickman.jpg" alt="Place played photo">
+                            <img src="img/barsPlayed/tipsyCow.jpg" alt="Place played photo">
+                            <img src="img/barsPlayed/pals.jpg" alt="Place played photo">
+                        </div>
+                        <p class="delivered-text">Plays <span>50+</span> shows a year!</p>
+                    </div>
+                </div>
+
+                <div class="intro-img">
+                    <img src="img/introPhoto.JPG" alt="Sawyer playing guitar in the park">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-music" id="music">
+
+            <h2 class="section-title">Albums</h2>
+            <div class="sawyer-music grid grid--3-cols">
+
+                <div class="album">
+
+                    <div class="cover-img">
+                        <img src="img/abumCovers/A_GOOD_LIFE.jpg" alt="cover image A Good Life">
+                    </div>
+
+                    <div class="music">
+
+                        <ul class="songList">
+                            <li>
+                                <audio id="song-1" src="Music/A_GOOD_LIFE/MilkCrateMaster4-1.mp3"></audio>
+                                <ion-icon onclick="playSong('player-btn-1','song-1','songName_1')" id="player-btn-1" name="play"></ion-icon>
+                                <p id="songName_1">Milk Crate</p>
+                            </li>
+                            <li>
+                                <audio id="song-2" src="Music/A_GOOD_LIFE/HighwayManMaster2-1.mp3"></audio>
+                                <ion-icon onclick="playSong('player-btn-2','song-2','songName_2')" id="player-btn-2" name="play"></ion-icon>
+                                <p id="songName_2">Highway Man</p>
+                            </li>
+                            <li>
+                                <audio id="song-3" src="Music/A_GOOD_LIFE/AGoodLifeMaster3-1.mp3"></audio>
+                                <ion-icon id="player-btn-3" onclick="playSong('player-btn-3','song-3','songName_3')" name="play"></ion-icon>
+                                <p id="songName_3">A Good Life</p>
+                            </li>
+                            <li>
+                                <audio id="song-4" src="Music/A_GOOD_LIFE/AmericaItsYouILongToSeeMaster3-1.mp3"></audio>
+                                <ion-icon onclick="playSong('player-btn-4','song-4','songName_4')" id="player-btn-4" name="play"></ion-icon>
+                                <p id="songName_4">America, It's You Long To See</p>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="album">
+
+                    <div class="cover-img">
+                        <img src="img/abumCovers/Happiness_for_you_and_I.jpg" alt="cover image Happiness for you and I">
+                    </div>
+
+                    <div class="music">
+                        <ul class="songList">
+                            <li>
+                                <audio id="song-5" src="Music/Happiness_For_You_And_I/My Song 4 3.mp3"></audio>
+                                <ion-icon onclick="playSong('player-btn-5','song-5','songName_5')" id="player-btn-5" name="play"></ion-icon>
+                                <p id="songName_5">Happiness For You and I</p>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div class="album">
+
+                    <div class="cover-img">
+                        <img src="img/abumCovers/Let_Things_Go.jpg" alt="cover Let Things Go">
+                    </div>
+
+                    <div class="music">
+                        <ul class="songList">
+                            <li>
+                                <audio id="song-6" src="Music/Let_Things_Go/LetThingsGo.mp3"></audio>
+                                <ion-icon onclick="playSong('player-btn-6','song-6','songName_6')" id="player-btn-6" name="play"></ion-icon>
+                                <p id="songName_6">Let Things Go</p>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h2 class="section-title">Videos</h2>
+            <div class="videos grid grid--3-cols">
+                <div class="music-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/W2a9F9AysYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="music-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/UDfQhjO1ywU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="music-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/50Ew1tQmZa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="music-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MIEyfCZR8g8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="music-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6suctkQIyng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+                <div class="music-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cXnS9xp37dk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="music-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fUc6lNSkAJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="music-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/_d2AOlxogQU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="music-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QjHrwkZOwd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+            </div>
+        </section>
+        <section class="section-events" id="events">
+            <!-- <h2 class="section-title">Events</h2> -->
+            <div class="events">
+                <h2 class="new-events-header">Upcoming Events</h2>
+
+                <div class="new-events grid grid--3-cols">
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Scooter's Bar, Sabetha,KS <br /> New Years Eve Party!</h3>
+                        <p class="event-time">December 31, 2021 <span class="time-span">9pm-1am</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">The Would Eye, Falls City, NE</h3>
+                        <p class="event-time">January 1, 2022 <span class="time-span">9pm-1am</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Across the Trax, Adams, NE</h3>
+                        <p class="event-time">February 19, 2022 <span class="time-span">8pm-Midnight</span></p>
+                    </div>
+                </div>
+
+                <h2 class="past-events-header">Past Events</h2>
+                <div class="past-events grid grid--3-cols">
+                    <div class="scheduled-event">
+                        <h3 class="event-title">The Would Eye, Falls City, NE</h3>
+                        <p class="event-time">November 6, 2021 <span class="time-span">9pm-1am</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">The Would Eye, Falls City, NE</h3>
+                        <p class="event-time">September 4, 2021 <span class="time-span">9pm-1am</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">The Field Bar, Diller, NE <br />(feat. Ethan Hough on Lead Guitar)</h3>
+                        <p class="event-time">July 24, 2021 <span class="time-span">9pm-1am</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Good Times Bar & Grill, Louisville, NE</h3>
+                        <p class="event-time">July 17, 2021 <span class="time-span">8:30pm-12:30pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Black Cow Fat Pig, Norfolk, NE</h3>
+                        <p class="event-time">July 14, 2021 <span class="time-span">6pm-9pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Black Cow Fat Pig, Norfolk, NE</h3>
+                        <p class="event-time">June 23, 2021 <span class="time-span">6pm-9pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Pop N’ Docs, Decatur, NE</h3>
+                        <p class="event-time">June 19, 2021 <span class="time-span">4pm-8pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Pickrell Days, Pickrell, NE</h3>
+                        <p class="event-time">June 13, 2021 <span class="time-span">12pm-4pm</span></p>
+                    </div>
+
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Seneca 150 + 1 year Anniversary, Seneca, KS</h3>
+                        <p class="event-time">June 12, 2021 <span class="time-span">3:30pm-5:30pm</span></p>
+                    </div>
+
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Pop N’ Docs, Decatur, NE</h3>
+                        <p class="event-time">May 31, 2021 <span class="time-span">3pm-7pm</span></p>
+                    </div>
+
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Tipsy Cow, Franklin, NE</h3>
+                        <p class="event-time">May 29, 2021 <span class="time-span">8pm-Midnight</span></p>
+                    </div>
+
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Private Wedding Party, <br />Pitch West, Omaha, NE</h3>
+                        <p class="event-time">May 21, 2021 <span class="time-span">7pm-11pm</span></p>
+                    </div>
+
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Private Birthday Party, Lincoln, NE</h3>
+                        <p class="event-time">May 8, 2021 <span class="time-span">5pm-???</span></p>
+                    </div>
+
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Broadway Brothers, Decatur, NE</h3>
+                        <p class="event-time">April 3, 2021 <span class="time-span">8pm-Midnight</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Braska Bar, Lincoln, NE</h3>
+                        <p class="event-time">March 17, 2021 <span class="time-span">5pm-8pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">The Would Eye, Falls City, NE</h3>
+                        <p class="event-time">March 6, 2021 <span class="time-span">9pm-1am</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Black Cow Fat Pig, Norfolk, NE</h3>
+                        <p class="event-time">February 19, 2021 <span class="time-span">6pm-9pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Cedarwood Assisted Living,<br /> Fairbury, NE</h3>
+                        <p class="event-time">January 19, 2021 <span class="time-span">2pm-3pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Tooley’s Lounge, Fairbury, NE</h3>
+                        <p class="event-time">January 1, 2021 <span class="time-span">12pm-4pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Rusty’s Place, Humboldt, NE</h3>
+                        <p class="event-time">December 31, 2020 <span class="time-span">9pm-1am</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Good Times Bar & Grill, Louisville, NE</h3>
+                        <p class="event-time">November 25, 2020 <span class="time-span">8pm-Midnight</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Rusty’s Place, Humboldt, NE</h3>
+                        <p class="event-time">October 31, 2020 <span class="time-span">9pm-1am</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Falls City Chamber Event, Falls City, NE</h3>
+                        <p class="event-time">September 27, 2020 <span class="time-span">12pm-4pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Private Birthday, Portis, KS</h3>
+                        <p class="event-time">September 26, 2020 <span class="time-span">8pm-Midnight</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Black Cow Fat Pig, Norfolk, NE</h3>
+                        <p class="event-time">September 25, 2020 <span class="time-span">6pm-9pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Private Wedding Reception, McCook, NE</h3>
+                        <p class="event-time">September 20, 2020 <span class="time-span">4pm-7pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Schilling Bridge Winery, Pawnee City, NE</h3>
+                        <p class="event-time">September 6, 2020 <span class="time-span">2pm-5pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">The Would Eye, Falls City, NE</h3>
+                        <p class="event-time">September 5, 2020 <span class="time-span">9pm-1am</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Black Cow Fat Pig, Norfolk, NE</h3>
+                        <p class="event-time">September 4, 2020 <span class="time-span">6pm-9pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Hub Cafe Micro Market, Lincoln, NE </h3>
+                        <p class="event-time">August 19, 2020 <span class="time-span">5pm-7pm</span></p>
+                    </div>
+                    <div class="scheduled-event">
+                        <h3 class="event-title">Bohemian Lounge, Verdigre, NE</h3>
+                        <p class="event-time">August 15, 2020 <span class="time-span">8pm-Midnight</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-about" id="about">
+            <h2 class="section-title">About Sawyer Jay</h2>
+            <div class="about">
+
+                <div class="about-card grid-about">
+                    <div class="about-img">
+                        <img src="img/playing.jpg" alt="Sawyer playing music">
+                    </div>
+                    <div class="about-text">
+                        <h3 class="about-title">What Sawyer Jay Performs</h3>
+                        <p class="about-paragraph">
+                            Sawyer Jay is an energetic and entertaining artist. He is able to captivate audiences with his unique tenor voice and his ability to play multiple instruments simultaneously, such as; the guitar, banjo, harmonica and drums. As a result of his multi-instrumental
+                            performances his fans throughout the midwest nicknamed him “The One Man Van Band.”
+                        </p>
+                        <br />
+                        <p class="about-paragraph">
+                            The music he performs is as multifaceted as the instruments he plays. His repertoire includes a variety of classics, including artists such as Johnny Cash, Jim Croce, Simon & Garfunkel, The Beatles, Tom Petty and John Denver. He also performs a collection
+                            of newer songs including artists like The Zac Brown Band, Chris Stapleton, Tyler Childers, The Avett Brothers and many more. As well as playing an array of covers, Sawyer Jay is a talented songwriter and enjoys showcasing his
+                            own compositions during his shows.
+                        </p>
+                        <br />
+                        <p class="about-paragraph">
+                            An engaging and exciting performer, Sawyer Jay is sure to attract and entertain audiences of all ages.
+                        </p>
+                    </div>
+
+                    <div class="about-text">
+                        <h3 class="about-title">How Sawyer Became A Musician</h3>
+                        <p class="about-paragraph">
+                            Sawyer Jay began learning and playing music at an early age. He took piano lessons, played the saxophone in the school band and sang in the school choir. All of this musical knowledge aided him when he began to teach himself guitar, and later the banjo
+                            and harmonica, during his high school years.
+                        </p>
+                        <br />
+                        <p class="about-paragraph">
+                            After graduating high school, Sawyer Jay’s love of music led him to Nashville, Tennessee. While living in Nashville, he navigated through the cut throat music scene of the music city. The obstacles of big record companies and booking agencies didn’t stop
+                            him. He played at the famous Bluebird Cafe, The Five Spot, The Underground and, like many up and coming musicians, busked for tips on Broadway Street. While in Nashville he was fortunate enough to share the stage with many
+                            musicians including, Tim Boucher and Samantha Mouchet.
+                        </p>
+                        <br />
+                        <p class="about-paragraph">
+                            After a year of living in the music city, Sawyer Jay returned to his home in Lincoln, Nebraska, where he continued to perform and play music. He played solo shows as well as playing in multiple bands at local venues such as; The Zoo Bar, Knickerbockers,
+                            Duffy’s Tavern and others.
+                        </p>
+                        <br />
+                        <p class="about-paragraph">
+                            Following every show Sawyer Jay has played, his fan base has continued to grow. As a result, he has been invited to perform at the Nebraska State Fair and multiple county fairs throughout the midwest.
+                        </p>
+                        <br />
+                        <p class="about-paragraph">
+                            Currently, Sawyer Jay resides in Lincoln, Nebraska. He plays shows at a variety of venues including; bars, wineries, weddings, private parties and any occasions that need music.
+                        </p>
+
+                    </div>
+                    <div class="about-img">
+                        <img src="img/tour.jpg" alt="Sawyer in his van">
+                    </div>
+
+                    <div class="about-img">
+                        <img src="img/write.jpg" alt="Sawyer writing">
+                    </div>
+                    <div class="about-text">
+                        <h3 class="about-title">More about Sawyer Jay</h3>
+                        <p class="about-paragraph">
+                            “The One Man Van Band” plays more than 50 shows across the midwest every year.
+                        </p>
+                        <br />
+                        <p class="about-paragraph">
+                            Sawyer Jay attended the University of Nebraska-Lincoln and graduated with a Bachelors degree in English in 2018. He was awarded for his composition “Running Behind” in the Omaha Once Songwriting Competition in 2015, the critics stated that it was “a song
+                            that rises above the others” and that the “lyrics are universal, and very relatable.”
+                        </p>
+                        <br />
+                        <p class="about-paragraph">
+                            “Songs evoke a general sense of growing up in Nebraska. The primarily mid-tempo pieces capture the essence of life on the plains quite effectively…Its texture gave the listener the feeling of riding in the back of a pickup on a warm day.” - Hear Nebraska
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-contact" id="contact">
+            <div class="contact">
+                <div class="contact-box grid-contact">
+                    <h2 class="contact-title">Book Sawyer Jay Today</h2>
+                    <div class="sawyer-contact">
+                        <h3 class="contact-name">SAWYER JAY KREIKEMEIER</h3>
+                        <p class="contact-info">
+                            Email: sawyerjkreikemeier@gmail.com
+                            <br />Phone: (402) 890 – 1111
+                        </p>
+
+                    </div>
+                    <div class="black-dog-contact">
+                        <h3 class="contact-name">BLACK DOG BOOKING COMPANY</h3>
+                        <p class="contact-info">
+                            Shawn Cole
+                            <br />Email: mrshawncole@gmail.com
+                            <br />Web: shawncole.net
+                        </p>
+
+                    </div>
+                    <div class="contact-img">
+                        <img src="img/guitar.jpg" alt="Sawyer playing music">
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

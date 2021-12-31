@@ -1,0 +1,13 @@
+{
+    "icons": [{
+            "src": "img/sawyer-icon-192.JPG",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "img/sawyer-icon-512.JPG",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
