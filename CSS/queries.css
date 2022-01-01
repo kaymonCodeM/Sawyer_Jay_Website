@@ -160,9 +160,6 @@
     .primary-heading {
         font-size: 6.2rem;
     }
-    .quote-heading {
-        font-size: 3.6rem;
-    }
     .delivered-text {
         font-size: 2.4rem;
     }
@@ -232,6 +229,9 @@
 */
 
 @media(max-width: 32em) {
+    .quote-heading {
+        font-size: 3rem;
+    }
     .cover-img img {
         width: 100%;
     }
