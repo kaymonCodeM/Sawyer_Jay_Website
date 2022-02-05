@@ -349,5 +349,5 @@ body {
 .intro-img img {
     width: 100%;
     justify-self: center;
-    border: .8rem outset #555b66;
+    border: .8rem solid #333;
 }

@@ -21,7 +21,7 @@ https://www.youtube.com/watch?v=rkqqBA6ohc0
 
 .cover-img img {
     width: 100%;
-    border: .8rem outset #555b66;
+    border: .8rem solid #333;
     margin-bottom: 2.4rem;
 }
 
@@ -72,5 +72,5 @@ https://www.youtube.com/watch?v=rkqqBA6ohc0
 .music-video iframe {
     display: block;
     width: 100%;
-    border: .8rem outset #555b66;
+    border: .8rem solid #333;
 }
